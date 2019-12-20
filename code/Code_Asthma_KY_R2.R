@@ -97,7 +97,7 @@ exp_dat$zip <- as.factor(exp_dat$zip)
 jeffzip <- left_join(jeffzip, exp_dat, by=c("ZCTA5CE10" = "zip"))
 
 #############################################
-#Supplementary Figure 9, was Figure 2 in R0 #
+#Supplementary Figure 1, was Figure 2 in R0 #
 #HyADS exposures by ZIP over time           #
 #############################################
 
@@ -124,7 +124,7 @@ jeffzipc %>%
 dev.off()
 
 ####################################################
-#Now Figure 2, was Figure 3 in R0                  #
+#Figure 3                                          #
 #Plot of count of hospitalizations by ZIP over time#
 ####################################################
 tiff(filename = "Figure_3_Zip_Map_Asthma_Count.tiff", type = "cairo" ,  res=300, height = 6, width = 5, units = "in")
